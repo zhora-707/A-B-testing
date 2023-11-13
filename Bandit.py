@@ -123,16 +123,16 @@ class Visualization():
         df = pd.DataFrame(data)
         df.to_csv("bandit_rewards.csv", index=False)
 
-def report_cumulative_reward_and_regret(self, epsilon_greedy_rewards, thompson_rewards):
-        cumulative_reward_epsilon = np.sum(epsilon_greedy_rewards)
-        cumulative_reward_thompson = np.sum(thompson_rewards)
-        cumulative_regret_epsilon = np.sum([max(Bandit_Reward) - r for r in epsilon_greedy_rewards])
-        cumulative_regret_thompson = np.sum([max(Bandit_Reward) - r for r in thompson_rewards])
+    def report_cumulative_reward_and_regret(self, epsilon_greedy_rewards, thompson_rewards):
+            cumulative_reward_epsilon = np.sum(epsilon_greedy_rewards)
+            cumulative_reward_thompson = np.sum(thompson_rewards)
+            cumulative_regret_epsilon = np.sum([max(Bandit_Reward) - r for r in epsilon_greedy_rewards])
+            cumulative_regret_thompson = np.sum([max(Bandit_Reward) - r for r in thompson_rewards])
 
-        print(f"Epsilon-Greedy Cumulative Reward: {cumulative_reward_epsilon:.2f}")
-        print(f"Thompson Sampling Cumulative Reward: {cumulative_reward_thompson:.2f}")
-        print(f"Epsilon-Greedy Cumulative Regret: {cumulative_regret_epsilon:.2f}")
-        print(f"Thompson Sampling Cumulative Regret: {cumulative_regret_thompson:.2f}")
+            print(f"Epsilon-Greedy Cumulative Reward: {cumulative_reward_epsilon:.2f}")
+            print(f"Thompson Sampling Cumulative Reward: {cumulative_reward_thompson:.2f}")
+            print(f"Epsilon-Greedy Cumulative Regret: {cumulative_regret_epsilon:.2f}")
+            print(f"Thompson Sampling Cumulative Regret: {cumulative_regret_thompson:.2f}")
 
 
 #--------------------------------------#
