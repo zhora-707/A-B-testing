@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
   Run this file at first, in order to see what is it printng. Instead of the print() use the respective log level
 """
@@ -285,3 +286,6 @@ if __name__=='__main__':
     logger.warning("warning message")
     logger.error("error message")
     logger.critical("critical message")
+=======
+404: Not Found
+>>>>>>> 741aa13be03ab9b8fa3ec114e511b6bca79c6c53
